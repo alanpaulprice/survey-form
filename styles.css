@@ -1,0 +1,24 @@
+:root {
+  --color-1: hsl(80, 32%, 50%);
+  --color-2: hsl(80, 32%, 12.5%);
+  --color-3: hsl(80, 32%, 100%);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  background: var(--color-1);
+}
+
+#title {
+  text-align: center;
+}
+
+#form-container {
+  display: flex;
+  background: var(--color-3);
+  min-height: 250px;
+}
