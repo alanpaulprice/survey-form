@@ -43,20 +43,29 @@ submit all my inputs.
 <body>
   <div id="container">
     <h1 id="title">Survey Form</h1>
+
     <div id="form-container">
-      
+      <p id="description" class="text-align-center">
+        Let us know how we can improve freeCodeCamp
+      </p>
+      <div class="flex-row">
+        <div class="flex-col text-align-right">
+          <label for="name" id="name-label">Name
+        </div>
+        <div class="flex-col">
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        </label>
+      </div>
     </div>
   </div>
+
   <script src="./index.js"></script>
 </body>
 </html>
 
 <!--
-<p id="description">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  Quidem quaerat dicta et ad, autem, ipsum reiciendis soluta ducimus impedit
-  nobis deleniti unde, eum veritatis tempore maiores officiis esse laborum cumque.
-</p>
+
 <form action="survey-form">
   <label for="name" id="name-label">Name<br>
     <input type="text" name="name" id="name" placeholder="Enter your name">

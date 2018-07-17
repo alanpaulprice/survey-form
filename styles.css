@@ -18,7 +18,26 @@ body {
 }
 
 #form-container {
+  background: var(--color-3)
+  color: var(--color-1);
+}
+
+.flex-row {
   display: flex;
-  background: var(--color-3);
-  min-height: 250px;
+}
+
+.flex-col {
+  flex: 1 1 auto;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+input {
+  width: 100%;
 }
