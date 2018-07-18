@@ -29,7 +29,7 @@ body {
 
 .flex-col-half {
   flex: 1 1 50%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .text-align-right {
@@ -40,6 +40,6 @@ body {
   text-align: center;
 }
 
-input {
+.width-full {
   width: 100%;
 }

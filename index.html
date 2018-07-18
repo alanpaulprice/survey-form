@@ -52,7 +52,8 @@ submit all my inputs.
           <label for="name" id="name-label">Name:</label>
         </div>
         <div class="flex-col-half">
-          <input type="text" name="name" id="name" placeholder="Enter your name">
+          <input type="text" name="name" id="name" class="width-full"
+          placeholder="Enter your name">
         </div>
       </div>
       <div class="flex-row">
@@ -60,7 +61,8 @@ submit all my inputs.
           <label for="email" id="email-label">Email:</label>
         </div>
         <div class="flex-col-half">
-          <input type="text" id="email" placeholder="Enter your email address">
+          <input type="text" id="email" class="width-full"
+          placeholder="Enter your email address">
         </div>
       </div>
       <div class="flex-row">
@@ -68,17 +70,18 @@ submit all my inputs.
           <label for="number" id="number-label">Age:</label>
         </div>
         <div class="flex-col-half">
-          <input type="number" id="number" min="1" max="115" placeholder="Enter your age">
+          <input type="number" id="number" class="width-full" min="1"
+          max="115" placeholder="Enter your age">
         </div>
       </div>
       <div class="flex-row">
-        <div class="flex-col-half">
+        <div class="flex-col-half text-align-right">
           <label for="dropdown" id="dropdown-label">
             Which option best describes your current role?
           </label>
         </div>
         <div class="flex-col-half">
-          <select name="dropdown" id="dropdown">
+          <select name="dropdown" id="dropdown" class="width-full">
             <option value="" disabled>Select an option</option>
             <option value="student">Student</option>
             <option value="full-time employment">Full-time employment</option>
@@ -87,6 +90,48 @@ submit all my inputs.
             <option value="prefer not to say">"Prefer not to say</option>
             <option value="other">Other</option>
           </select>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-col-half text-align-right">
+          <label for="radio">Would you recommend freeCodeCamp to a friend?</label>
+        </div>
+        <div class="flex-col-half">
+          <input type="radio" id="radio-yes" name="radio" value"yes">
+          <label for="radio-yes">Yes</label><br>
+          <input type="radio" id="radio-maybe" name="radio" value"maybe">
+          <label for="radio-maybe">Maybe</label><br>
+          <input type="radio" id="radio-no" name="radio" value"no">
+          <label for="radio-no">No</label>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-col-half text-align-right">
+          <label for="certifications-checkboxes">
+            Which freeCodeCamp certifications are you planning to obtain?
+          </label>
+        </div>
+        <div class="flex-col-half">
+          <input type="checkbox" id="checkbox-responsive-web">
+          <label for="checkbox-responsive-web">
+            Responsive Web Design Certification
+          </label><br>
+          <input type="checkbox" id="checkbox-javascript-algos">
+          <label for="checkbox-javascript-algos">
+            Javascript Algorithms and Data Structures
+          </label><br>
+          <input type="checkbox" id="checkbox-data-vis">
+          <label for="checkbox-data-vis">
+            Data Visualization
+          </label><br>
+          <input type="checkbox" id="checkbox-apis-micros">
+          <label for="checkbox-apis-micros">
+            APIs and Microservices
+          </label><br>
+          <input type="checkbox" id="checkbox-security-qa">
+          <label for="checkbox-security-qa">
+            Information Security and Quality Assurance
+          </label>
         </div>
       </div>
     </div>
