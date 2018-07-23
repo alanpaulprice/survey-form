@@ -1,50 +1,97 @@
+/* ===== VARIABLES ===== */
+
 :root {
-  --color-1: hsl(80, 32%, 50%);
+  --color-1: hsl(80, 32%, 30%);
   --color-2: hsl(80, 32%, 12.5%);
-  --color-3: hsl(80, 32%, 100%);
+  --color-3: hsl(80, 32%, 60%);
+  --color-4: hsl(80, 32%, 97.5%);
   }
+
+/* ===== GENERAL ===== */
 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
   }
+
+  ::selection {
+    background-color: var(--color-3);
+  }
+
+  .flex-row {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .flex-col-half {
+    flex: 1 1 50%;
+    margin: 0 10px;
+  }
+
+  .text-align-right {
+    text-align: right;
+  }
+
+  .text-align-center {
+    text-align: center;
+  }
+
+  .width-full {
+    width: 100%;
+  }
+
+/* ===== SPECIFIC ===== */
 
 body {
   background: var(--color-1);
+}
+
+#container {
+  max-width: 960px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 #title {
   text-align: center;
   margin: 20px 0;
   font-size: 40px;
+  color: var(--color-4);
 }
 
 #form-container {
-  background: var(--color-3)
-  color: var(--color-1);
-  width: 95%;
+  background: var(--color-4);
+  color: var(--color-2);
+  width: 80%;
   margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.flex-row {
-  display: flex;
+#description {
+  margin: 20px 0;
 }
 
-.flex-col-half {
-  flex: 1 1 50%;
-  /* border: 1px solid red; */
+input:focus, select:focus, textarea:focus {
+  outline-color: var(--color-1);
 }
 
-.text-align-right {
-  text-align: right;
+#submit {
+  margin: 10px auto;
+  padding: 5px 10px;
 }
 
-.text-align-center {
-  text-align: center;
-}
+/* // ===== MEDIA QUERIES ===== */
 
-.width-full {
-  width: 100%;
+@media only screen and (min-width: 768px) {
+  .flex-row {
+  }
+
+  .flex-col-half {
+
+  }
 }
