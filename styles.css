@@ -55,7 +55,7 @@ body {
   text-align: center;
 }
 
-#form-container {
+#survey-form {
   background: var(--color-4);
   color: var(--color-2);
   width: 100%;
@@ -86,7 +86,7 @@ input:focus, select:focus, textarea:focus {
 /* // ===== MEDIA QUERIES ===== */
 
 @media only screen and (min-width: 576px) {
-  #form-container {
+  #survey-form {
     width: 90%;
   }
 }
@@ -98,7 +98,7 @@ input:focus, select:focus, textarea:focus {
     flex-flow: row;
   }
 
-  #form-container {
+  #survey-form {
     width: 80%;
   }
 

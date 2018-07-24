@@ -7,12 +7,13 @@
   <title>Survey Form</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <script src="https://forum.freecodecamp.org/clicks/track?url=https%3A%2F%2Fcdn.freecodecamp.org%2Ftestable-projects-fcc%2Fv1%2Fbundle.js&post_id=463047&topic_id=206944"></script>
 </head>
 <body>
   <div id="container">
     <h1 id="title">Survey Form</h1>
 
-    <div id="form-container">
+    <form id="survey-form">
       <p id="description">
         Let us know how we can improve freeCodeCamp
       </p>
@@ -22,7 +23,7 @@
         </div>
         <div class="flex-col-input">
           <input type="text" name="name" id="name" class="width-full"
-          placeholder="Enter your name">
+          placeholder="Enter your name" required>
         </div>
       </div>
       <div class="flex-row">
@@ -30,8 +31,8 @@
           <label for="email" id="email-label">Email:</label>
         </div>
         <div class="flex-col-input">
-          <input type="text" id="email" class="width-full"
-          placeholder="Enter your email address">
+          <input type="email" id="email" class="width-full"
+          placeholder="Enter your email address" required>
         </div>
       </div>
       <div class="flex-row">
@@ -66,11 +67,11 @@
           <label for="radio">Would you recommend freeCodeCamp to a friend?</label>
         </div>
         <div class="flex-col-input">
-          <input type="radio" id="radio-yes" name="radio" value"yes">
+          <input type="radio" id="radio-yes" name="radio" value="yes">
           <label for="radio-yes">Yes</label><br>
-          <input type="radio" id="radio-maybe" name="radio" value"maybe">
+          <input type="radio" id="radio-maybe" name="radio" value="maybe">
           <label for="radio-maybe">Maybe</label><br>
-          <input type="radio" id="radio-no" name="radio" value"no">
+          <input type="radio" id="radio-no" name="radio" value="no">
           <label for="radio-no">No</label>
         </div>
       </div>
@@ -114,7 +115,7 @@
       <div class="flex-row">
         <button id="submit">Submit</button>
       </div>
-    </div>
+    </form>
   </div>
 </body>
 </html>
