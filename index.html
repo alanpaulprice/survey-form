@@ -13,43 +13,43 @@
     <h1 id="title">Survey Form</h1>
 
     <div id="form-container">
-      <p id="description" class="text-align-center">
+      <p id="description">
         Let us know how we can improve freeCodeCamp
       </p>
       <div class="flex-row">
-        <div class="flex-col-half text-align-right">
+        <div class="flex-col-label">
           <label for="name" id="name-label">Name:</label>
         </div>
-        <div class="flex-col-half">
+        <div class="flex-col-input">
           <input type="text" name="name" id="name" class="width-full"
           placeholder="Enter your name">
         </div>
       </div>
       <div class="flex-row">
-        <div class="flex-col-half text-align-right">
+        <div class="flex-col-label">
           <label for="email" id="email-label">Email:</label>
         </div>
-        <div class="flex-col-half">
+        <div class="flex-col-input">
           <input type="text" id="email" class="width-full"
           placeholder="Enter your email address">
         </div>
       </div>
       <div class="flex-row">
-        <div class="flex-col-half text-align-right">
+        <div class="flex-col-label">
           <label for="number" id="number-label">Age:</label>
         </div>
-        <div class="flex-col-half">
+        <div class="flex-col-input">
           <input type="number" id="number" class="width-full" min="1"
           max="115" placeholder="Enter your age">
         </div>
       </div>
       <div class="flex-row">
-        <div class="flex-col-half text-align-right">
+        <div class="flex-col-label">
           <label for="dropdown" id="dropdown-label">
             Which option best describes your current role?
           </label>
         </div>
-        <div class="flex-col-half">
+        <div class="flex-col-input">
           <select name="dropdown" id="dropdown" class="width-full">
             <option value="" disabled>Select an option</option>
             <option value="student">Student</option>
@@ -62,10 +62,10 @@
         </div>
       </div>
       <div class="flex-row">
-        <div class="flex-col-half text-align-right">
+        <div class="flex-col-label">
           <label for="radio">Would you recommend freeCodeCamp to a friend?</label>
         </div>
-        <div class="flex-col-half">
+        <div class="flex-col-input">
           <input type="radio" id="radio-yes" name="radio" value"yes">
           <label for="radio-yes">Yes</label><br>
           <input type="radio" id="radio-maybe" name="radio" value"maybe">
@@ -75,12 +75,12 @@
         </div>
       </div>
       <div class="flex-row">
-        <div class="flex-col-half text-align-right">
+        <div class="flex-col-label">
           <label for="certifications-checkboxes">
             Which freeCodeCamp certifications are you planning to obtain?
           </label>
         </div>
-        <div class="flex-col-half">
+        <div class="flex-col-input">
           <input type="checkbox" value="repsonsive-web" id="checkbox-responsive-web">
           <label for="checkbox-responsive-web">
             Responsive Web Design Certification
@@ -104,10 +104,10 @@
         </div>
       </div>
       <div class="flex-row">
-        <div class="flex-col-half text-align-right">
+        <div class="flex-col-label">
           <label for="text-area-commments">Comments and suggestions:</label>
         </div>
-        <div class="flex-col-half">
+        <div class="flex-col-input">
           <textarea type="text-area" id="text-area-commments" class="width-full"></textarea>
         </div>
       </div>
